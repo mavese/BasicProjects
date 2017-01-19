@@ -1,4 +1,4 @@
-message = 'Ifz!Bccz'
+essage = 'Ifz!Bccz'
 out = ''
 for i in range(0,26):
 	for x in range(0,len(message)):
