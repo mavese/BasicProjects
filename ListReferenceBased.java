@@ -2,7 +2,7 @@
  * Reference-based implementation of ADT list.
  * Modify the code to implement a doubly linked list.
  *
- * @author
+ * @author Matthew Mantese, SID: 1491224, Section: 3
  */
 
 import java.security.PublicKey;
@@ -207,7 +207,6 @@ public class ListReferenceBased<E> implements ListInterface<E>, Iterable<E> {
      * contained in the list.
      */
     public int contains(E elt) {
-        int idx = -1;
         int counter = 1;
         for (Node curr = head; curr != null; curr = curr.getNext()) {
             if (curr.getItem() == elt) {
@@ -215,7 +214,7 @@ public class ListReferenceBased<E> implements ListInterface<E>, Iterable<E> {
             }
             counter++;
         }
-        return idx;
+        return -1;
     }
 
     /**
